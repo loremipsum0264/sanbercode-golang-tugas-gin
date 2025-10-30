@@ -1,0 +1,8 @@
+POST http://localhost:8080/bioskop
+content-type: application/json
+
+{
+    "nama": "Bioskop XXI",
+    "lokasi": "TSM Bandung",
+    "rating": 5.0
+}
