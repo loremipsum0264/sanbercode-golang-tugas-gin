@@ -32,3 +32,16 @@ CREATE TABLE "public"."bioskop" (
 -- Primary Key structure for table bioskop
 -- ----------------------------
 ALTER TABLE "public"."bioskop" ADD CONSTRAINT "bioskop_pkey" PRIMARY KEY ("id");
+
+
+-- CREATE SEQUENCE bioskop_id_seq;
+
+-- CREATE TABLE bioskop (
+--     id INTEGER NOT NULL DEFAULT nextval('bioskop_id_seq'),
+--     nama VARCHAR(255) NOT NULL,
+--     lokasi VARCHAR(255),
+--     rating FLOAT,
+--     PRIMARY KEY (id)
+-- );
+
+-- ALTER SEQUENCE bioskop_id_seq OWNED BY bioskop.id;

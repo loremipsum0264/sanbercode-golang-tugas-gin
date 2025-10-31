@@ -1,0 +1,8 @@
+PUT http://localhost:8080/bioskop/3
+content-type: application/json
+
+{
+    "nama": "Bioskop 33 XXI",
+    "lokasi": "ITC Bandung",
+    "rating": 5.0
+}

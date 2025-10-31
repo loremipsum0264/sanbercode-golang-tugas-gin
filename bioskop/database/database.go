@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	DBConnections *sql.DB
+	DbConnection *sql.DB
 	err           error
 )
 
@@ -31,13 +31,13 @@ func Initiator() error {
 	dsn  := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
 
-	DBConnections, err = sql.Open("postgres", dsn )
+	DbConnection, err = sql.Open("postgres", dsn )
 	if err != nil {
 		return err
 	}
 
 	// check connection
-	err = DBConnections.Ping()
+	err = DbConnection.Ping()
 	if err != nil {
 		panic(err)
 	}

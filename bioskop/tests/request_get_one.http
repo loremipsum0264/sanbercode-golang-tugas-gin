@@ -1,0 +1,2 @@
+GET http://localhost:8080/bioskop/1
+content-type: application/json
